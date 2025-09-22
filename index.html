@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大冒险转盘游戏</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>大冒险转盘游戏</h1>
+            <p>点击按钮旋转转盘，接受你的大冒险任务！</p>
+        </header>
+        
+        <main class="game-main">
+            <!-- 转盘区域 -->
+            <div class="spinner-container">
+                <div class="spinner-wrapper">
+                    <div id="spinner" class="spinner">
+                        <!-- 转盘扇区将通过JavaScript动态生成 -->
+                    </div>
+                    <div class="spinner-arrow"></div>
+                </div>
+                
+                <!-- 旋转按钮 -->
+                <button id="spin-button" class="spin-button">
+                    <i class="fas fa-sync-alt"></i> 旋转转盘
+                </button>
+            </div>
+        </main>
+        
+        <!-- 结果弹窗 -->
+        <div id="result-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>你的大冒险任务</h2>
+                    <span id="close-modal" class="close-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <p id="task-result" class="task-result"></p>
+                </div>
+                <div class="modal-footer">
+                    <button id="new-task-button" class="new-task-button">
+                        再来一次
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/tasks.js"></script>
+    <script src="scripts/spinner.js"></script>
+    <script src="scripts/game.js"></script>
+</body>
+</html>
