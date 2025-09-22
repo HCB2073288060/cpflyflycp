@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- 背景圆 -->
+  <circle cx="128" cy="128" r="120" fill="#f5f5f5" stroke="#333" stroke-width="2"/>
+  
+  <!-- 转盘样式 - 8个彩色扇区 -->
+  <g>
+    <path d="M128 8 L128 248 A120 120 0 0 1 209.7 58.3 Z" fill="#FF6B6B"/>
+    <path d="M128 8 L209.7 58.3 A120 120 0 0 1 248 128 Z" fill="#4ECDC4"/>
+    <path d="M128 8 L248 128 A120 120 0 0 1 209.7 197.7 Z" fill="#45B7D1"/>
+    <path d="M128 8 L209.7 197.7 A120 120 0 0 1 128 248 Z" fill="#FFA07A"/>
+    <path d="M128 8 L128 248 A120 120 0 0 1 46.3 197.7 Z" fill="#98D8C8"/>
+    <path d="M128 8 L46.3 197.7 A120 120 0 0 1 8 128 Z" fill="#F7DC6F"/>
+    <path d="M128 8 L8 128 A120 120 0 0 1 46.3 58.3 Z" fill="#BB8FCE"/>
+    <path d="M128 8 L46.3 58.3 A120 120 0 0 1 128 248 Z" fill="#85C1E9"/>
+  </g>
+  
+  <!-- 中心圆 -->
+  <circle cx="128" cy="128" r="20" fill="#333"/>
+  
+  <!-- 箭头 -->
+  <g transform="translate(128, 40) rotate(-90)">
+    <polygon points="0,-20 15,10 -15,10" fill="#333"/>
+  </g>
+</svg>
